@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  what_youd_do: MyString
+  why_youd_do: MyString
+  show_as_suggestion: 
+
+two:
+  what_youd_do: MyString
+  why_youd_do: MyString
+  show_as_suggestion: 
