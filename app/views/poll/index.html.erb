@@ -1,24 +1,12 @@
-<div class="provoke">
-	<span>If you had a fixed $15,000.00 revenue,</span><br>
-	<span class="italic">and were free to do anything you want...</span>
-</div>
-
-<div class="question_list">
-	<%= form_for @poll, url: { action: "create"} do |f| %>
-	<div class="question_box">
-		<span><%= f.label :what_youd_do %></span><br>
-		<span><%= f.text_field :what_youd_do %></span>
-	</div>
-	<div class="question_box">
-		<span><%= f.label :why_youd_do %></span><br>
-		<span><%= f.text_field :why_youd_do %></span>
-	</div>
-	<div><%= f.submit 'Send' %></div>
+<h1>If you receive money to live your dream</h1>
+  <div class="inner">
+	<%= form_for @poll, url: { action: "create"} do |f| %>	  
+	  <h3>What would you do?</h3>
+	  <h3><%= f.text_field :what_youd_do %></h3>
+	  <h3>Why?</h3>
+	  <h3><%= f.text_field :why_youd_do %></h3>
+	  <p class="inner lead">
+	    <a href="#" class="btn btn-lg btn-default">Send</a>
+	  </p>
 	<% end %>
-</div>
-
-<div class="suggestion">
-	<span>What people have answered</span><br>
-	<span><%= @suggestion_poll.what_youd_do %></span><br>
-	<span><%= @suggestion_poll.why_youd_do %></span>
-</div>
+  </div>

@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Missnot</title>
+  <title>wyw</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-	<body>
-		<div class="container">
-			<%= yield %>
-		</div>
-	</body>
+  <body>
+	<div class="site-wrapper">
+
+	  <div class="site-wrapper-inner">
+
+		<div class="cover-container">
+
+		  <div class="masthead clearfix">
+			<div class="inner">
+			  <h3 class="masthead-brand">Whatever You Want</h3>
+				<nav>
+				  <ul class="nav masthead-nav">
+	                <li><a href="#">Contact</a></li>
+	              </ul>
+	            </nav>
+	        </div>
+	      </div>
+
+	      <div class="inner cover">
+	      	<%= yield %>
+	      </div>
+
+	      <div class="mastfoot">
+		    <div class="inner">
+		      <p>What people have answered</p><span><%= @suggestion_poll.what_youd_do %>, <%= @suggestion_poll.why_youd_do %></span>
+		    </div>
+		  </div>
+
+	  </div>
+
+	</div>
+
+  </body>
 </html>
