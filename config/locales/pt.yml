@@ -1,0 +1,11 @@
+pt:
+  defaults:
+    contact: "Contato"
+    people_answers: "O que as pessoas já responderam"
+
+  poll:
+    index:
+      head_phrase: "Se você recebesse dinheiro para viver teu sonho"
+      what_youd_do: "O que você faria?" 
+      why_youd_do: "Por quê?"
+      send: "Enviar"

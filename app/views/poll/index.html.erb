@@ -1,12 +1,12 @@
-<h1>If you receive money to live your dream</h1>
+<h1><%= t '.head_phrase' %></h1>
   <div class="inner">
 	<%= form_for @poll, url: { action: "create"} do |f| %>	  
-	  <h3>What would you do?</h3>
+	  <h3><%= t '.what_youd_do' %></h3>
 	  <h3><%= f.text_field :what_youd_do %></h3>
-	  <h3>Why?</h3>
+	  <h3><%= t '.why_youd_do' %></h3>
 	  <h3><%= f.text_field :why_youd_do %></h3>
 	  <p class="inner lead">
-	    <a href="#" class="asubmit btn btn-lg btn-default">Send</a>
+	    <a href="#" class="asubmit btn btn-lg btn-default"><%= t '.send' %></a>
 	  </p>
 	<% end %>
   </div>

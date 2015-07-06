@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>wyw</title>
+  <title>vibetoggle</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -15,10 +15,10 @@
 
 		  <div class="masthead clearfix">
 			<div class="inner">
-			  <h3 class="masthead-brand">Whatever You Want</h3>
+			  <h3 class="masthead-brand">vibetoggle</h3>
 				<nav>
 				  <ul class="nav masthead-nav">
-	                <li><a href="#">Contact</a></li>
+	                <li><a href="#"><%= t 'defaults.contact' %></a></li>
 	              </ul>
 	            </nav>
 	        </div>
@@ -30,7 +30,7 @@
 
 	      <div class="mastfoot">
 		    <div class="inner">
-		      <p>What people have answered</p><span><%= @suggestion_poll.what_youd_do %>, <%= @suggestion_poll.why_youd_do %></span>
+		      <p><%= t 'defaults.people_answers' %></p><span><%= @suggestion_poll.what_youd_do %>, <%= @suggestion_poll.why_youd_do %></span>
 		    </div>
 		  </div>
 

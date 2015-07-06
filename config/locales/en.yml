@@ -20,4 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  defaults:
+    contact: "Contact"
+    people_answers: "What people have answered"
+
+  poll:
+    index:
+      head_phrase: "If you receive money to live your dream"
+      what_youd_do: "What would you do?"
+      why_youd_do: "Why?"
+      send: "Send"
