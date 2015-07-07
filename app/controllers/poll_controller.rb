@@ -6,7 +6,11 @@ class PollController < ApplicationController
   end
 
   def create
-  	if Poll.new(poll_params).save
+    poll = Poll.new(poll_params).tap do |p|
+      p.ip = request.remote_ip
+    end
+
+  	if poll.save
   		render 'thanks'
   	end
   end
