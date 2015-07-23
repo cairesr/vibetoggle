@@ -1,8 +1,6 @@
 bundle install
 
-rake db:migrate
-rake db:seed
-
+rake db:create db:migrate
 rails s
 
 the app is ready to Heroku: https://devcenter.heroku.com/articles/development-configuration
